@@ -11,7 +11,10 @@ echo $paragrafo. " " .strlen($paragrafo) ;
 // strlen mi da la lunghezza delle stringhe
 
 $badword= $_GET["badword"];
-//ora con la querystring ? la inserisco nell'url insieme a badword= ...inserisco la parola che voglio censurare con tre asterischi, in questo caso ho scelto sopravvissuto
+
+//ora con la querystring ? la inserisco nell'url insieme a badword= ...inserisco poi la parola che voglio censurare con tre asterischi
+
+// ["badword"] sta per il nome 
 echo "<br>";
 
 $newword= str_replace($badword,"***",$paragrafo);
